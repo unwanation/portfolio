@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+a,
+a:checked {
+	text-decoration: none;
+	color: inherit;
+}
+
+html {
+	font-size: 1.2em;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--accent: darkviolet;
+	--bg: rgb(244, 237, 249);
+	--header-bg: rgba(244, 237, 249, 0.75);
+	--text: black;
+}
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	color: var(--text);
+	background-color: var(--bg);
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header {
+	max-height: 15vh;
+	padding: 2% 0;
+	position: sticky;
+	top: 0;
+	backdrop-filter: blur(4px);
+	z-index: 2;
+	background-color: var(--header-bg);
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.section {
+	padding: 4% 0;
+	height: 85vh;
+}
+
+.button {
+	background-color: var(--text);
+	color: var(--bg);
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+	background-color: var(--bg);
+	color: var(--text);
+	transition: all 0.5s ease-in-out;
+}
+
+.explore-button {
+	border-radius: 100%;
+	width: 3rem;
+	height: 3rem;
+	font-size: 0.75rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.project {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.project-item {
+	margin-left: 0.5rem;
+}
+
+.tools-table {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-flow: row;
+	gap: 1.5rem;
+}
+
+.tools-table span {
+	display: grid;
+	place-items: center;
+}
+
+.footer {
+	padding: 2% 0;
+	bottom: 0;
+}
+
+b {
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: black;
+		--text: ghostwhite;
+	}
+}
