@@ -53,7 +53,6 @@ html {
 }
 
 :root {
-	--accent: darkviolet;
 	--bg: rgb(244, 237, 249);
 	--header-bg: rgba(244, 237, 249, 0.75);
 	--text: black;
@@ -167,9 +166,10 @@ h2 {
 	font-weight: 300;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--bg: black;
-		--text: ghostwhite;
+		--header-bg: rgba(0, 0, 0, 0.75;
+		--text: rgb(244, 237, 249);
 	}
 }
