@@ -4,87 +4,135 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>unva (@unwanation)</title>
+		<title>unva</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="wrapper flex">
-				<a href="#"><span class="title">unva (@unwanation)</span></a>
-				<div class="flex">
-					<a style="margin-right: 1.5rem" href="#projects">Projects</a>
-					<a href="#tools">Techs & Tools</a>
-				</div>
-			</div>
-		</header>
+		<div class="wrapper">
+			<header class="header">
+				<a href="#">
+					<img class="header__logo" src="logo.svg" alt="unva" />
+				</a>
+				<nav class="nav">
+					<a class="nav__link" href="#projects">Projects</a>
+					<a class="nav__link" href="#tools">Techs & Tools</a>
+				</nav>
+			</header>
 
-		<main>
-			<div class="wrapper">
+			<main class="main">
 				<section id="introduction" class="section introduction">
-					<h1>Hi, I'm unva</h1>
-					<h2>& I'm a <b>&lt;web&gt;</b> + <b>{ mobile }</b> developer.</h2>
+					<h1 class="section__title">Hi, I'm unva</h1>
+					<h2 class="section__subtitle">
+						& I'm a <em>web</em> / <em>mobile</em> developer.
+					</h2>
 					<p>
-						I am a Creative Developer and Web Designer specializing in creating
-						apps with clean user interface and optimized user experience.
+						I am a Creative Developer and Web Designer specializing
+						in creating apps with clean user interface and optimized
+						user experience.
 					</p>
 					<br />
 					<a href="#projects" class="button">My Projects</a>
 				</section>
 				<section id="projects" class="section projects">
-					<h1>My Projects</h1>
+					<h1 class="section__title">My Projects</h1>
 					<br />
-					<div class="project-list">
+					<div class="projects__list">
 						<div class="project">
-							<a href="#" class="button explore-button">
-								<span>Explore</span>
+							<span class="project__name"> Portfolio </span>
+							<ul class="project__techs">
+								<li class="project__tech">HTML</li>
+								<li class="project__tech">SCSS</li>
+							</ul>
+							<a
+								href="https://github.com/unwanation/portfolio"
+								class="button project__button"
+							>
+								Explore
 							</a>
-							<span class="project-item">Lorem, ipsum dolor.</span>
 						</div>
 						<div class="project">
-							<a href="#" class="button explore-button">
-								<span>Explore</span>
+							<span class="project__name"> uForms Client </span>
+							<ul class="project__techs">
+								<li class="project__tech">JavaScript</li>
+								<li class="project__tech">Vue</li>
+								<li class="project__tech">Nuxt</li>
+							</ul>
+							<a
+								href="https://github.com/unwanation/uforms-client"
+								class="button project__button"
+							>
+								Explore
 							</a>
-							<span class="project-item">Lorem, ipsum dolor.</span>
 						</div>
 						<div class="project">
-							<a href="#" class="button explore-button">
-								<span>Explore</span>
+							<span class="project__name"> uForms Server </span>
+							<ul class="project__techs">
+								<li class="project__tech">Python</li>
+								<li class="project__tech">SQLModel</li>
+								<li class="project__tech">FastAPI</li>
+							</ul>
+							<a
+								href="https://github.com/unwanation/uforms-server"
+								class="button project__button"
+							>
+								Explore
 							</a>
-							<span class="project-item">Lorem, ipsum dolor.</span>
+						</div>
+						<div class="project">
+							<span class="project__name">
+								Currency Converter
+							</span>
+							<ul class="project__techs">
+								<li class="project__tech">Dart</li>
+								<li class="project__tech">Flutter</li>
+							</ul>
+							<a
+								href="https://github.com/unwanation/currency-converter"
+								class="button project__button"
+							>
+								Explore
+							</a>
 						</div>
 					</div>
+
+					<a
+						href="https://github.com/unwanation/"
+						class="button projects__button"
+						>More</a
+					>
 				</section>
 				<section id="tools" class="section">
-					<h1>Tech & Tools</h1>
+					<h1 class="section__title">Tech & Tools</h1>
 					<div class="tools-table">
 						<span>HTML</span>
-						<span>CSS, SASS</span>
-						<span>Tailwind</span>
-						<span>JavaScript</span>
-						<span>TypeScript</span>
+						<span>CSS, SCSS</span>
+						<!-- <span>Tailwind</span> -->
+						<span>JS, TS</span>
 						<span>ReactJS</span>
-						<span>Astro</span>
-						<span>NodeJS, ExpressJS</span>
+						<!-- <span>Astro</span> -->
 						<span>Vue</span>
 						<span>Pinia</span>
 						<span>Nuxt</span>
-						<span>NuxtUI</span>
-						<span>Prisma</span>
-						<span>PostgreSQL</span>
+						<!-- <span>NuxtUI</span> -->
+						<!-- <span>Prisma</span> -->
+						<span>Python</span>
+						<span>FastAPI</span>
+						<span>SQL</span>
 						<span>Git</span>
 						<span>Flutter</span>
 					</div>
 				</section>
-			</div>
-		</main>
+			</main>
 
-		<footer class="footer">
-			<div class="wrapper flex">
-				<span class="title">Let's Work Together</span>
-				<a href="mailto:unwanation@yandex.com" class="button">Write an Email</a>
-				<hr />
-				Designed and Developed by unva
-			</div>
-		</footer>
+			<footer class="footer">
+				<div class="wrapper flex">
+					<span class="title">Let's Work Together</span>
+					<a href="mailto:unwanation@yandex.com" class="button"
+						>Write an Email</a
+					>
+				</div>
+			</footer>
+		</div>
+
 		<script src="main.js"></script>
 	</body>
 </html>
